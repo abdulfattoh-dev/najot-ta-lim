@@ -6,13 +6,7 @@ const CardSkeleton = () => {
             {
                 Array(10).fill(0).map((_, index) => (
                     <div key={index} className="p-4 bg-white rounded-xl">
-                        <div className="relative">
-                            <img
-                                className="bg-gray-300 size-40 mx-auto rounded-full"
-                                src={''}
-                                alt=""
-                            />
-                        </div>
+                        <div className="relative bg-gray-300 size-40 mx-auto rounded-full"></div>
                         <div className="mt-4">
                             <h3 className="bg-gray-300 w-[80%] h-5"></h3>
                             <p className="bg-gray-300 w-[60%] h-3.5 my-5"></p>
