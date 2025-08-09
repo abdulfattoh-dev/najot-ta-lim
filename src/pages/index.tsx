@@ -3,12 +3,7 @@ import { useRoutes } from 'react-router-dom'
 
 const Dashboard = lazy(() => import('./dashboard'))
 const Home = lazy(() => import('./dashboard/home'))
-
 const Payments = lazy(() => import('./dashboard/payments'))
-const PaymentsAll = lazy(() => import('./dashboard/payments/All'))
-const PaymentsPaid = lazy(() => import('./dashboard/payments/Paid'))
-const PaymentsUnpaid = lazy(() => import('./dashboard/payments/Unpaid'))
-const PaymentsUnconfirmed = lazy(() => import('./dashboard/payments/Unconfirmed'))
 
 const Students = lazy(() => import('./dashboard/students'))
 const StudentsCreate = lazy(() => import('./dashboard/students/Create'))
@@ -38,14 +33,7 @@ const MainRouters = () => {
                             element: <Dashboard />,
                             children: [
                                 { index: true, element: <Home /> },
-                                {
-                                    path: 'payments', element: <Payments />, children: [
-                                        { index: true, element: <PaymentsAll /> },
-                                        { path: 'paid', element: <PaymentsPaid /> },
-                                        { path: 'unpaid', element: <PaymentsUnpaid /> },
-                                        { path: 'unconfirmed', element: <PaymentsUnconfirmed /> }
-                                    ]
-                                },
+                                { path: 'payments', element: <Payments /> },
                                 {
                                     path: 'students', element: <Students />, children: [
                                         { index: true, element: <StudentsCreate /> },
