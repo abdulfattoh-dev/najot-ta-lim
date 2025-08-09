@@ -10,9 +10,9 @@ const PaymentsPaid = lazy(() => import('./dashboard/payments/Paid'))
 const PaymentsUnpaid = lazy(() => import('./dashboard/payments/Unpaid'))
 const PaymentsUnconfirmed = lazy(() => import('./dashboard/payments/Unconfirmed'))
 
-const Groups = lazy(() => import('./dashboard/groups'))
-const GroupsActive = lazy(() => import('./dashboard/groups/Active'))
-const GroupsFinished = lazy(() => import('./dashboard/groups/Finished'))
+const Students = lazy(() => import('./dashboard/students'))
+const StudentsCreate = lazy(() => import('./dashboard/students/Create'))
+const StudentsAll = lazy(() => import('./dashboard/students/All'))
 
 const Pointers = lazy(() => import('./dashboard/pointers'))
 
@@ -47,9 +47,9 @@ const MainRouters = () => {
                                     ]
                                 },
                                 {
-                                    path: 'groups', element: <Groups />, children: [
-                                        { index: true, element: <GroupsActive /> },
-                                        { path: 'finished', element: <GroupsFinished /> }
+                                    path: 'students', element: <Students />, children: [
+                                        { index: true, element: <StudentsCreate /> },
+                                        { path: 'all', element: <StudentsAll /> }
                                     ]
                                 },
                                 { path: 'pointers', element: <Pointers /> },

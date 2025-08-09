@@ -32,11 +32,11 @@ const Dashboard = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink className={({ isActive }) => `flex gap-5 py-3 px-5 rounded-[10px] ${isActive ? 'bg-[#EEEAE5] text-[#BC8E5B]' : 'bg-white text-black'}`} to={'groups'}>
+                        <NavLink className={({ isActive }) => `flex gap-5 py-3 px-5 rounded-[10px] ${isActive ? 'bg-[#EEEAE5] text-[#BC8E5B]' : 'bg-white text-black'}`} to={'students'}>
                             {({ isActive }) => (
                                 <>
                                     <div className={isActive ? 'text-[#BC8E5B]' : 'text-[#707070]'}><Users /></div>
-                                    <div>Groups</div>
+                                    <div>Students</div>
                                 </>
                             )}
                         </NavLink>

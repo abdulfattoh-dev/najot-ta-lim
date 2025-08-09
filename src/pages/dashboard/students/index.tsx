@@ -9,14 +9,14 @@ const Groups = () => {
           <li>
             <NavLink end={true} to={''}>
               {({ isActive }) => (
-                <button className={isActive ? 'my-3 px-7 pb-2 text-[#BC8E5B] border-b-3' : 'my-3 px-7 pb-2 text-[#707070] hover:text-black'}>Active</button>
+                <button className={isActive ? 'my-3 px-7 pb-2 text-[#BC8E5B] border-b-3' : 'my-3 px-7 pb-2 text-[#707070] hover:text-black'}>Create</button>
               )}
             </NavLink>
           </li>
           <li>
-            <NavLink to={'finished'}>
+            <NavLink to={'all'}>
               {({ isActive }) => (
-                <button className={isActive ? 'my-3 px-7 pb-2 text-[#BC8E5B] border-b-3' : 'my-3 px-7 pb-2 text-[#707070] hover:text-black'}>Finished</button>
+                <button className={isActive ? 'my-3 px-7 pb-2 text-[#BC8E5B] border-b-3' : 'my-3 px-7 pb-2 text-[#707070] hover:text-black'}>All</button>
               )}
             </NavLink>
           </li>
